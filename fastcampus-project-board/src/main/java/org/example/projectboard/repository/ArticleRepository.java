@@ -26,7 +26,6 @@ public interface ArticleRepository extends
         bindings.bind(root.hashtag).first(StringExpression::containsIgnoreCase); // like '%${v}%'
         bindings.bind(root.createdAt).first(DateTimeExpression::eq); // like '%${v}%'
         bindings.bind(root.createdBy).first(StringExpression::containsIgnoreCase); // like '%${v}%'
-
-
     }
+
 }
